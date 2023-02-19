@@ -1,0 +1,6 @@
+[submodule "src/submodules/Graphite-gtk-theme"]
+	path = src/submodules/Graphite-gtk-theme
+	url = https://github.com/vinceliuice/Graphite-gtk-theme.git
+[submodule "src/submodules/Nordzy"]
+	path = src/submodules/Nordzy
+	url = https://github.com/MolassesLover/Nordzy.git

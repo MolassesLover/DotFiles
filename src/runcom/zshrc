@@ -1,0 +1,32 @@
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# Path
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Docker
+alias doco="docker compose"
+
+# Helix
+alias helix="hx"
+alias nano="hx"
+alias neovim="hx"
+alias nvim="hx"
+alias vi="hx"
+alias vim="hx"
+
+# Zellij
+alias screen="zellij"
+alias tmux="zellij"
+
+# Environment variables
+export CMAKE_GENERATOR="Ninja"
+export GPG_TTY=$(tty)
+
+eval "$(starship init zsh)"
