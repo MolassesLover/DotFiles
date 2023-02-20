@@ -28,3 +28,27 @@ sh install.sh
 mv $HOME/.icons/Nordzy-cursors* $HOME/.local/share/icons/ && \
 # If ~/.icons is empty, delete it
 [ "$(ls -A $HOME/.icons)" ] || rm -fr $HOME/.icons
+
+if [ !-d $HOME/.config/alacritty ]; then
+    mkdir -p $HOME/.config/alacritty
+fi
+
+cp $BASEDIR/config/alacritty/alacritty.yml $HOME/.config/alacritty/
+
+if [ !-d $HOME/.config/blender/3.4/scripts/presets/interface_theme ]; then
+    mkdir -p $HOME/.config/blender/3.4/scripts/presets/interface_theme
+fi
+
+cp $BASEDIR/config/blender/blender-nord_dark.xml $HOME/.config/blender/3.4/scripts/presets/interface_theme/
+
+if [ !-d $HOME/.config/helix ]; then
+    mkdir -p $HOME/.config/helix
+fi
+
+cp -r $BASEDIR/config/helix/* $HOME/.config/helix/
+
+if [ !-d $HOME/.config/zellij ]; then
+    mkdir -p $HOME/.config/zellij
+fi
+
+cp $BASEDIR/config/zellij/config.kdl $HOME/.config/zellij/
