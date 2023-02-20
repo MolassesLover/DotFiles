@@ -4,3 +4,6 @@
 [submodule "src/submodules/Nordzy"]
 	path = src/submodules/Nordzy
 	url = https://github.com/MolassesLover/Nordzy.git
+[submodule "src/submodules/Nordzy-cursors"]
+	path = src/submodules/Nordzy-cursors
+	url = https://github.com/alvatip/Nordzy-cursors.git
