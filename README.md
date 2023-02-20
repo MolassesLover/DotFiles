@@ -17,7 +17,7 @@ The [configurations](src/config), [`*.rc`](src/runcom) files, and [themes](src/s
 
 ## Installation
 
-> **Warning**: This could override your Alacritty, Helix, and Zellij configurations.
+> **Warning**: This could overwrite your Alacritty, Helix, and Zellij configurations.
 
 ```sh
 cd src/ && install.sh
